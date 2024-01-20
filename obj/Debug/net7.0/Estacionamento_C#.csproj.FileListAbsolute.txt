@@ -1,0 +1,14 @@
+C:\Users\Lucas\OneDrive\Documentos\Repositórios no GitHub\Estacionamento_C#\bin\Debug\net7.0\Estacionamento_C#.exe
+C:\Users\Lucas\OneDrive\Documentos\Repositórios no GitHub\Estacionamento_C#\bin\Debug\net7.0\Estacionamento_C#.deps.json
+C:\Users\Lucas\OneDrive\Documentos\Repositórios no GitHub\Estacionamento_C#\bin\Debug\net7.0\Estacionamento_C#.runtimeconfig.json
+C:\Users\Lucas\OneDrive\Documentos\Repositórios no GitHub\Estacionamento_C#\bin\Debug\net7.0\Estacionamento_C#.dll
+C:\Users\Lucas\OneDrive\Documentos\Repositórios no GitHub\Estacionamento_C#\bin\Debug\net7.0\Estacionamento_C#.pdb
+C:\Users\Lucas\OneDrive\Documentos\Repositórios no GitHub\Estacionamento_C#\obj\Debug\net7.0\Estacionamento_C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucas\OneDrive\Documentos\Repositórios no GitHub\Estacionamento_C#\obj\Debug\net7.0\Estacionamento_C#.AssemblyInfoInputs.cache
+C:\Users\Lucas\OneDrive\Documentos\Repositórios no GitHub\Estacionamento_C#\obj\Debug\net7.0\Estacionamento_C#.AssemblyInfo.cs
+C:\Users\Lucas\OneDrive\Documentos\Repositórios no GitHub\Estacionamento_C#\obj\Debug\net7.0\Estacionamento_C#.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\OneDrive\Documentos\Repositórios no GitHub\Estacionamento_C#\obj\Debug\net7.0\Estacionamento_C#.dll
+C:\Users\Lucas\OneDrive\Documentos\Repositórios no GitHub\Estacionamento_C#\obj\Debug\net7.0\refint\Estacionamento_C#.dll
+C:\Users\Lucas\OneDrive\Documentos\Repositórios no GitHub\Estacionamento_C#\obj\Debug\net7.0\Estacionamento_C#.pdb
+C:\Users\Lucas\OneDrive\Documentos\Repositórios no GitHub\Estacionamento_C#\obj\Debug\net7.0\Estacionamento_C#.genruntimeconfig.cache
+C:\Users\Lucas\OneDrive\Documentos\Repositórios no GitHub\Estacionamento_C#\obj\Debug\net7.0\ref\Estacionamento_C#.dll
