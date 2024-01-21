@@ -12,7 +12,7 @@ namespace Estacionamento_C_.Models
             Modelo = modelo;
         }
 
-        public String Placa { get; set; }
+        public String Placa { get; set; } // fazer lógica da placa
 
         public String Modelo { get; set; }
     }

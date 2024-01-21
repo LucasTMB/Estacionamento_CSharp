@@ -1,14 +1,15 @@
-﻿using Estacionamento_C_.Models;
+﻿using System.Globalization;
+using Estacionamento_C_.Models;
 
 Console.WriteLine("Seja bem-vindo ao sistema de estacionamento!");
 
 Console.Write("Digite o preço inicial: ");
 string inputPI = Console.ReadLine();
-decimal precoInicial = decimal.Parse(inputPI);
+double precoInicial = double.Parse(inputPI, CultureInfo.InvariantCulture);
 
 Console.Write("Digite o preço por hora: ");
 string inputPH = Console.ReadLine();
-decimal precoHora = decimal.Parse(inputPH);
+double precoHora = double.Parse(inputPH, CultureInfo.InvariantCulture);
 
 Estacionamento estacionamento = new Estacionamento(precoInicial, precoHora);
 
@@ -40,14 +41,22 @@ while (encerrar != true) {
             break;
         case "2":
             Console.WriteLine("Digite a placa do veículo para remover:");
+            string placaRemover = Console.ReadLine();
 
-            // adicionar código
+            bool removeu = estacionamento.RemoverVeiculo(placaRemover);
+
+            if (removeu) {
+                Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado:");
+                string inputHE = Console.ReadLine();
+                int horasEstacionado = int.Parse(inputHE);
+
+                Console.WriteLine($"\nO veículo {placaRemover} foi removido e o preço total foi de: R$ {estacionamento.CalcularPreco(horasEstacionado)}");
+            } 
 
             Console.WriteLine("\nDigite uma tecla para continuar");
             Console.ReadKey();
 
             break;
-
         case "3":
             estacionamento.ListarVeiculos();
 
@@ -55,7 +64,6 @@ while (encerrar != true) {
             Console.ReadKey();
 
             break;
-
         case "4":
             Console.WriteLine("\nDigite uma tecla para continuar");
             Console.ReadKey();
@@ -65,7 +73,6 @@ while (encerrar != true) {
             encerrar = true;
 
             break;
-
         default:
             Console.WriteLine("Insira uma opção válida!");
 
