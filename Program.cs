@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Text.RegularExpressions;
 using Estacionamento_C_.Models;
 
 Console.WriteLine("Seja bem-vindo ao sistema de estacionamento!");
@@ -27,8 +28,21 @@ while (encerrar != true) {
     
     switch (opcao) {
         case "1":
-            Console.WriteLine("Digite a placa do veículo para estacionar:");
-            string placa = Console.ReadLine();
+            Console.WriteLine("\nDigite a placa do veículo para estacionar (Ex: AAA-0000):");
+
+            string placa = "";
+            bool placaValida = false;
+
+            while (placaValida != true) {
+                placa = Console.ReadLine();
+                
+                placaValida = ValidarPlaca(placa);
+
+                if (placaValida == false) {
+                    Console.WriteLine("\nA placa não é válida. Por favor, digite novamente!\n");
+                }
+            }
+
             Console.WriteLine("Digite o modelo do veículo:");
             string modelo = Console.ReadLine();
 
@@ -81,4 +95,13 @@ while (encerrar != true) {
 
             break;
     }
+}
+
+static bool ValidarPlaca(string placa) {
+    // Expressão regular para validar o formato da placa (3 letras - 4 dígitos)
+    string padrao = @"^[A-Z]{3}-\d{4}$";
+
+
+    // Verificação se a placa corresponde ao padrão
+    return Regex.IsMatch(placa, padrao);
 }
